@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Packages — RVIP Tours</title>
+  <link rel="stylesheet" href="packages.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">RVIP <span>TOURS</span></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="packages.html" class="active">Packages</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button id="hambPackages" class="hamb" aria-label="menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap section">
+      <h1>Our Packages</h1>
+      <div class="grid-3 cards" id="cards">
+        <!-- card -->
+        <article class="card" data-name="Dubai Luxury">
+          <img src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?q=80&w=1200&auto=format&fit=crop&crop=entropy" alt="Dubai">
+          <div class="card-body">
+            <h3>Dubai Luxury - 4N/5D</h3>
+            <p class="muted">From ₹89,999</p>
+            <ul>
+              <li>4★ hotel stay</li>
+              <li>Daily breakfast</li>
+              <li>Desert safari & city tour</li>
+            </ul>
+            <div class="card-actions">
+              <a class="btn primary" href="contact.html">Book</a>
+              <a class="btn ghost" href="#">Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-name="Family Explorer">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop&crop=entropy" alt="Family">
+          <div class="card-body">
+            <h3>Family Explorer</h3>
+            <p class="muted">Custom group pricing</p>
+            <ul><li>Flexible hotels</li><li>Group activities</li></ul>
+            <div class="card-actions"><a class="btn primary" href="contact.html">Enquire</a></div>
+          </div>
+        </article>
+
+        <article class="card" data-name="Desert Adventure">
+          <img src="https://images.unsplash.com/photo-1541872703-5b20a7ea9b11?q=80&w=1200&auto=format&fit=crop&crop=entropy" alt="Desert">
+          <div class="card-body">
+            <h3>Desert Adventure</h3>
+            <p class="muted">Evening safari & dinner</p>
+            <div class="card-actions"><a class="btn primary" href="contact.html">Book Now</a></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="filter-row">
+        <input id="search" placeholder="Search packages..." type="search" />
+        <select id="sort">
+          <option value="default">Sort</option>
+          <option value="price-low">Price: low → high</option>
+        </select>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot-inner"><p>© <span id="year3"></span> RVIP Tours. All rights reserved.</p></div>
+  </footer>
+
+  <script src="packages.js"></script>
+</body>
+</html>
