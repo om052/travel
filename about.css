@@ -1,0 +1,31 @@
+:root{--bg:#071829;--muted:rgba(255,255,255,0.78);--accent:#2fb7ff;--glass:rgba(255,255,255,0.03)}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Roboto,sans-serif;background:linear-gradient(180deg,#071029,#081424);color:var(--muted)}
+.wrap{max-width:1100px;margin:0 auto;padding:1.1rem}
+.site-header{position:sticky;top:0;backdrop-filter:blur(6px);z-index:50;border-bottom:1px solid rgba(255,255,255,0.03)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;color:white;text-decoration:none}
+.logo span{color:var(--accent)}
+.nav{display:flex;gap:.6rem}
+.nav a{color:var(--muted);text-decoration:none;padding:.45rem .6rem;border-radius:8px}
+.nav a.active,.nav a:hover{background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(47,183,255,0.06))}
+.hamb{display:none}
+
+/* About hero */
+.about-hero{padding:2.6rem 0}
+.about-grid{display:grid;grid-template-columns:1fr 420px;gap:1.6rem;align-items:center}
+.about-grid h1{margin:0;color:white}
+.lead{color:rgba(255,255,255,0.86)}
+.list{margin-top:1rem}
+.list li{margin-bottom:.5rem}
+.about-photo img{width:100%;border-radius:12px;box-shadow:0 18px 40px rgba(2,8,14,0.6);object-fit:cover}
+
+/* stats */
+.team{padding:2rem 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.stat{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:1rem;border-radius:10px;text-align:center}
+.stat h3{margin:0;color:var(--accent);font-size:1.6rem}
+
+/* responsive */
+@media (max-width:900px){.about-grid{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.nav{display:none}.hamb{display:block}}
